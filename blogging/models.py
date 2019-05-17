@@ -18,7 +18,7 @@ class Category(models.Model):
     name=models.CharField(max_length=128)
     descripton=models.TextField(blank=True)
     posts=models.ManyToManyField(Post, blank=True, related_name='categories')
-    
+
     class Meta:
         verbose_name_plural = 'Categories'
 
